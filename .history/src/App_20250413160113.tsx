@@ -29,54 +29,36 @@ const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Index />} />
     <Route path="/auth" element={<Auth />} />
-    <Route
-      path="/dashboard"
-      element={
-        <ProtectedRoute>
-          <Dashboard />
-        </ProtectedRoute>
-      }
-    />
-    <Route
-      path="/workout"
-      element={
-        <ProtectedRoute>
-          <Workout />
-        </ProtectedRoute>
-      }
-    />
-    <Route
-      path="/sleep"
-      element={
-        <ProtectedRoute>
-          <Sleep />
-        </ProtectedRoute>
-      }
-    />
-    <Route
-      path="/nutrition"
-      element={
-        <ProtectedRoute>
-          <Nutrition />
-        </ProtectedRoute>
-      }
-    />
-    <Route
-      path="/journal"
-      element={
-        <ProtectedRoute>
-          <Journal />
-        </ProtectedRoute>
-      }
-    />
-    <Route
-      path="/settings"
-      element={
-        <ProtectedRoute>
-          <Settings />
-        </ProtectedRoute>
-      }
-    />
+    <Route path="/dashboard" element={
+      <ProtectedRoute>
+        <Dashboard />
+      </ProtectedRoute>
+    } />
+    <Route path="/workout" element={
+      <ProtectedRoute>
+        <Workout />
+      </ProtectedRoute>
+    } />
+    <Route path="/sleep" element={
+      <ProtectedRoute>
+        <Sleep />
+      </ProtectedRoute>
+    } />
+    <Route path="/nutrition" element={
+      <ProtectedRoute>
+        <Nutrition />
+      </ProtectedRoute>
+    } />
+    <Route path="/journal" element={
+      <ProtectedRoute>
+        <Journal />
+      </ProtectedRoute>
+    } />
+    <Route path="/settings" element={
+      <ProtectedRoute>
+        <Settings />
+      </ProtectedRoute>
+    } />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

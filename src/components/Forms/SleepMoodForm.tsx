@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
-import { MoonIcon, MoveIcon, Lungs } from 'lucide-react';
+import { MoonIcon, MoveIcon, Wind } from 'lucide-react';
 import { toast } from "sonner";
 
 const SleepMoodForm: React.FC = () => {
@@ -78,7 +78,7 @@ const SleepMoodForm: React.FC = () => {
       
       <div>
         <div className="flex items-center mb-4">
-          <Lungs className="h-5 w-5 mr-2 text-gold" />
+          <Wind className="h-5 w-5 mr-2 text-gold" />
           <h2 className="text-xl font-medium">Recovery Activities</h2>
         </div>
         <div className="space-y-4">
